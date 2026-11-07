@@ -1,0 +1,346 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#080808">
+  <title>JayKicks | GOOD KICKS. BETTER DAYS.</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #080808;
+      color: #fff;
+      line-height: 1.6;
+    }
+
+    header {
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #292929;
+    }
+
+    .logo {
+      color: #d4af37;
+      font-size: 25px;
+      font-weight: 900;
+      letter-spacing: 2px;
+    }
+
+    .location {
+      color: #aaa;
+      font-size: 12px;
+    }
+
+    .hero {
+      padding: 55px 22px;
+      text-align: center;
+      background:
+        linear-gradient(#000b, #000c),
+        url("images/hero.jpg") center/cover;
+      min-height: 390px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .hero h1 {
+      font-size: 38px;
+      line-height: 1.15;
+      margin-bottom: 15px;
+    }
+
+    .gold {
+      color: #d4af37;
+    }
+
+    .hero p {
+      color: #ddd;
+      margin-bottom: 25px;
+    }
+
+    .btn {
+      display: inline-block;
+      background: #d4af37;
+      color: #080808;
+      padding: 13px 24px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 38px 18px;
+    }
+
+    .section-title {
+      font-size: 25px;
+      margin-bottom: 8px;
+    }
+
+    .subtext {
+      color: #aaa;
+      margin-bottom: 22px;
+      font-size: 14px;
+    }
+
+    .products {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 14px;
+    }
+
+    .product {
+      background: #151515;
+      border: 1px solid #292929;
+      border-radius: 9px;
+      overflow: hidden;
+    }
+
+    .product img {
+      width: 100%;
+      height: 155px;
+      object-fit: cover;
+      display: block;
+      background: #222;
+    }
+
+    .product-info {
+      padding: 12px;
+    }
+
+    .product h3 {
+      font-size: 15px;
+      margin-bottom: 5px;
+    }
+
+    .price {
+      color: #d4af37;
+      font-weight: bold;
+      margin-bottom: 12px;
+    }
+
+    .order-btn {
+      display: block;
+      text-align: center;
+      background: #d4af37;
+      color: #080808;
+      text-decoration: none;
+      padding: 9px 5px;
+      border-radius: 4px;
+      font-size: 12px;
+      font-weight: bold;
+    }
+
+    .trust {
+      background: #121212;
+      border-top: 1px solid #292929;
+      border-bottom: 1px solid #292929;
+    }
+
+    .trust-item {
+      padding: 12px 0;
+      border-bottom: 1px solid #292929;
+    }
+
+    .trust-item:last-child {
+      border: none;
+    }
+
+    .trust-item strong {
+      color: #d4af37;
+    }
+
+    .about p {
+      color: #ccc;
+      margin-top: 12px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px 15px;
+      background: #111;
+      color: #aaa;
+      font-size: 13px;
+    }
+
+    footer strong {
+      color: #d4af37;
+    }
+
+    .whatsapp-float {
+      position: fixed;
+      bottom: 18px;
+      right: 15px;
+      background: #25d366;
+      color: #fff;
+      padding: 13px 17px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      box-shadow: 0 3px 12px #0008;
+      z-index: 10;
+    }
+
+    @media (min-width: 700px) {
+      .hero h1 {
+        font-size: 55px;
+      }
+
+      .products {
+        grid-template-columns: repeat(4, 1fr);
+      }
+
+      section {
+        padding-left: 8%;
+        padding-right: 8%;
+      }
+
+      .product img {
+        height: 220px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="logo">JAYKICKS.</div>
+    <div class="location">GQEBERHA, SA 🇿🇦</div>
+  </header>
+
+  <div class="hero">
+    <h1>GOOD KICKS.<br>
+      <span class="gold">BETTER DAYS.</span>
+    </h1>
+
+    <p>Fresh styles. Clean looks. Everyday confidence.</p>
+
+    <a href="#shop" class="btn">SHOP THE COLLECTION</a>
+  </div>
+
+  <section id="shop">
+    <h2 class="section-title">LATEST KICKS <span class="gold">.</span></h2>
+    <p class="subtext">
+      Find your next favourite pair. Message us to confirm sizes and availability.
+    </p>
+
+    <div class="products">
+
+      <div class="product">
+        <img src="images/shoe1.jpg" alt="Brown and white sneaker">
+        <div class="product-info">
+          <h3>Brown Classic</h3>
+          <p class="price">R1,400</p>
+          <a class="order-btn"
+             href="https://wa.me/27739498621?text=Hi%20JayKicks%2C%20I%20am%20interested%20in%20the%20Brown%20Classic.%20What%20sizes%20are%20available%3F">
+            ORDER ON WHATSAPP
+          </a>
+        </div>
+      </div>
+
+      <div class="product">
+        <img src="images/shoe2.jpg" alt="Blue and pink sneaker">
+        <div class="product-info">
+          <h3>Blue & Pink</h3>
+          <p class="price">Ask for price</p>
+          <a class="order-btn"
+             href="https://wa.me/27739498621?text=Hi%20JayKicks%2C%20please%20send%20me%20the%20price%20for%20the%20Blue%20and%20Pink%20sneaker.">
+            ORDER ON WHATSAPP
+          </a>
+        </div>
+      </div>
+
+      <div class="product">
+        <img src="images/shoe3.jpg" alt="White and beige sneaker">
+        <div class="product-info">
+          <h3>Beige Edition</h3>
+          <p class="price">Ask for price</p>
+          <a class="order-btn"
+             href="https://wa.me/27739498621?text=Hi%20JayKicks%2C%20please%20send%20me%20the%20price%20for%20the%20Beige%20Edition.">
+            ORDER ON WHATSAPP
+          </a>
+        </div>
+      </div>
+
+      <div class="product">
+        <img src="images/shoe4.jpg" alt="White and red sneaker">
+        <div class="product-info">
+          <h3>Red Detail</h3>
+          <p class="price">Ask for price</p>
+          <a class="order-btn"
+             href="https://wa.me/27739498621?text=Hi%20JayKicks%2C%20please%20send%20me%20the%20price%20for%20the%20Red%20Detail%20sneaker.">
+            ORDER ON WHATSAPP
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="trust">
+    <h2 class="section-title">SHOP WITH <span class="gold">CONFIDENCE.</span></h2>
+
+    <div class="trust-item">
+      <strong>01. Personal service</strong>
+      <p>Speak directly with JayKicks before placing your order.</p>
+    </div>
+
+    <div class="trust-item">
+      <strong>02. Confirm before ordering</strong>
+      <p>Check your style, size, price and delivery details with us first.</p>
+    </div>
+
+    <div class="trust-item">
+      <strong>03. Delivery information</strong>
+      <p>Delivery options and expected timelines are confirmed before payment.</p>
+    </div>
+  </section>
+
+  <section class="about">
+    <h2 class="section-title">ABOUT <span class="gold">JAYKICKS.</span></h2>
+
+    <p>
+      JayKicks is a sneaker store based in Gqeberha, South Africa.
+      We're here to bring fresh styles and clean everyday looks
+      closer to our people.
+    </p>
+
+    <p>
+      Your style. Your choice. GOOD KICKS. BETTER DAYS.
+    </p>
+
+    <br>
+
+    <a class="btn"
+       href="https://wa.me/27739498621?text=Hi%20JayKicks%2C%20I%20would%20like%20to%20make%20an%20enquiry.">
+      CHAT WITH JAYKICKS
+    </a>
+  </section>
+
+  <footer>
+    <strong>JAYKICKS.</strong>
+    <p>GOOD KICKS. BETTER DAYS.</p>
+    <p>Gqeberha, South Africa</p>
+    <p>WhatsApp: 073 949 8621</p>
+    <p>© 2026 JayKicks. All rights reserved.</p>
+  </footer>
+
+  <a class="whatsapp-float"
+     href="https://wa.me/27739498621?text=Hi%20JayKicks%2C%20I%20found%20your%20website.">
+    WhatsApp Us
+  </a>
+
+</body>
+</html>
